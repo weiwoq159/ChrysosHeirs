@@ -6,5 +6,6 @@
   "entry": "tools/clipboard-history",
   "link": "/tribios/library/clipboard-history",
   "status": "available",
-  "queueable": false
+  "queueable": false,
+  "icon": "SnippetsOutlined"
 }

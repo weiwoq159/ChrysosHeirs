@@ -11,4 +11,5 @@ export interface ApplicationManifest {
   link: `/tribios/library/${string}`;
   status: ApplicationStatus;
   queueable: boolean;
+  icon: string;
 }

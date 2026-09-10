@@ -6,5 +6,6 @@
   "entry": "tools/document-diff",
   "link": "/tribios/library/document-diff",
   "status": "disabled",
-  "queueable": false
+  "queueable": false,
+  "icon": "DiffOutlined"
 }

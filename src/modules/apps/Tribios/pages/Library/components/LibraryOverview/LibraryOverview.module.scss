@@ -1,0 +1,31 @@
+@use "../../../../../../../styles/variables.scss" as glass;
+
+.card {
+    height: 100%;
+
+    @include glass.glass-card;
+}
+
+.cardBody {
+    padding: 16px 18px;
+}
+
+.label {
+    color: #6f8799;
+    font-size: 12px;
+}
+
+.value {
+    display: block;
+    margin-top: 6px;
+    color: #234963;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.description {
+    display: block;
+    margin-top: 3px;
+    color: #89a0af;
+    font-size: 11px;
+}

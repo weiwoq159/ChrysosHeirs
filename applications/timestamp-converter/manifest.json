@@ -6,5 +6,6 @@
   "entry": "tools/timestamp-converter",
   "link": "/tribios/library/timestamp-converter",
   "status": "disabled",
-  "queueable": false
+  "queueable": false,
+  "icon": "ClockCircleOutlined"
 }

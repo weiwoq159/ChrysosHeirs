@@ -6,5 +6,6 @@
   "entry": "tools/media-inspector",
   "link": "/tribios/library/media-inspector",
   "status": "disabled",
-  "queueable": false
+  "queueable": false,
+  "icon": "InfoCircleOutlined"
 }

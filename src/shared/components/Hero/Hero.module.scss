@@ -5,6 +5,8 @@
   overflow: hidden;
   padding: 30px 34px;
 
+  isolation: isolate;
+
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 20px;
 
@@ -89,4 +91,5 @@
   .hero {
     padding: 24px;
   }
+
 }

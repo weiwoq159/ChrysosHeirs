@@ -6,5 +6,6 @@
   "entry": "tools/text-deduplicator",
   "link": "/tribios/library/text-deduplicator",
   "status": "available",
-  "queueable": false
+  "queueable": false,
+  "icon": "FilterOutlined"
 }

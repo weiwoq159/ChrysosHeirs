@@ -6,5 +6,6 @@
   "entry": "tools/process-observer",
   "link": "/tribios/library/process-observer",
   "status": "available",
-  "queueable": false
+  "queueable": false,
+  "icon": "DashboardOutlined"
 }

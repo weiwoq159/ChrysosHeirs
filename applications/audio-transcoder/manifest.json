@@ -6,5 +6,6 @@
   "entry": "tools/audio-transcoder",
   "link": "/tribios/library/audio-transcoder",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "AudioOutlined"
 }

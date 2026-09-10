@@ -6,5 +6,6 @@
   "entry": "tools/startup-manager",
   "link": "/tribios/library/startup-manager",
   "status": "unavailable",
-  "queueable": false
+  "queueable": false,
+  "icon": "RocketOutlined"
 }

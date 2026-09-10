@@ -6,5 +6,6 @@
   "entry": "tools/image-processor",
   "link": "/tribios/library/image-processor",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "PictureOutlined"
 }

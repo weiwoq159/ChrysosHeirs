@@ -6,5 +6,6 @@
   "entry": "tools/file-organizer",
   "link": "/tribios/library/file-organizer",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "FolderOpenOutlined"
 }

@@ -6,5 +6,6 @@
   "entry": "tools/pdf-merger",
   "link": "/tribios/library/pdf-merger",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "FilePdfOutlined"
 }

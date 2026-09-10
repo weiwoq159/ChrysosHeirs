@@ -6,5 +6,6 @@
   "entry": "tools/document-converter",
   "link": "/tribios/library/document-converter",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "SwapOutlined"
 }

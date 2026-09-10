@@ -30,4 +30,5 @@ pub struct ApplicationManifest {
     pub link: String,
     pub status: ApplicationStatus,
     pub queueable: bool,
+    pub icon: String,
 }

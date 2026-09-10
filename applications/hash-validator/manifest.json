@@ -6,5 +6,6 @@
   "entry": "tools/hash-validator",
   "link": "/tribios/library/hash-validator",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "SafetyCertificateOutlined"
 }

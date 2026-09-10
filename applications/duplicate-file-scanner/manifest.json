@@ -6,5 +6,6 @@
   "entry": "tools/duplicate-file-scanner",
   "link": "/tribios/library/duplicate-file-scanner",
   "status": "unavailable",
-  "queueable": true
+  "queueable": true,
+  "icon": "CopyOutlined"
 }

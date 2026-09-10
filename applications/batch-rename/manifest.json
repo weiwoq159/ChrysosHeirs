@@ -6,5 +6,6 @@
   "entry": "tools/batch-rename",
   "link": "/tribios/library/batch-rename",
   "status": "available",
-  "queueable": true
+  "queueable": true,
+  "icon": "EditOutlined"
 }
