@@ -55,5 +55,12 @@
       "unknown"
     ]
   },
-  "ignorePatterns": ["dist", "node_modules", "src-tauri/target", "coverage", "pnpm-lock.yaml", "src/auto-imports.d.ts"]
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "src-tauri/target",
+    "coverage",
+    "pnpm-lock.yaml",
+    "src/auto-imports.d.ts"
+  ]
 }
