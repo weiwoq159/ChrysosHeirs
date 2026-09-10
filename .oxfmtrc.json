@@ -1,0 +1,59 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "sortImports": {
+    "newlinesBetween": true,
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": [
+          "react",
+          "react-dom",
+          "react-dom/**",
+          "react-router",
+          "react-router/**",
+          "react-router-dom",
+          "react-router-dom/**"
+        ]
+      },
+      {
+        "groupName": "antd",
+        "elementNamePattern": ["antd", "@ant-design/**"]
+      },
+      {
+        "groupName": "internal",
+        "elementNamePattern": [
+          "@/**",
+          "@app/**",
+          "@assets/**",
+          "@components/**",
+          "@config/**",
+          "@core/**",
+          "@layout/**",
+          "@router/**",
+          "@styles/**",
+          "@workshop/**"
+        ]
+      }
+    ],
+    "groups": [
+      "type-import",
+      "react",
+      "antd",
+      ["value-builtin", "value-external"],
+      "internal",
+      ["value-parent", "value-sibling", "value-index"],
+      ["side_effect_style", "style"],
+      "unknown"
+    ]
+  },
+  "ignorePatterns": ["dist", "node_modules", "src-tauri/target", "coverage", "pnpm-lock.yaml", "src/auto-imports.d.ts"]
+}
