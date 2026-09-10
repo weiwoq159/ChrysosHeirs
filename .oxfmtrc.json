@@ -27,21 +27,6 @@
       {
         "groupName": "antd",
         "elementNamePattern": ["antd", "@ant-design/**"]
-      },
-      {
-        "groupName": "internal",
-        "elementNamePattern": [
-          "@/**",
-          "@app/**",
-          "@assets/**",
-          "@components/**",
-          "@config/**",
-          "@core/**",
-          "@layout/**",
-          "@router/**",
-          "@styles/**",
-          "@workshop/**"
-        ]
       }
     ],
     "groups": [
@@ -61,6 +46,7 @@
     "src-tauri/target",
     "coverage",
     "pnpm-lock.yaml",
-    "src/auto-imports.d.ts"
+    "src/auto-imports.d.ts",
+    "README.md"
   ]
 }

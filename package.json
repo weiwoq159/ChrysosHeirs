@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ahooks": "^3.10.0",
     "oxfmt": "^0.67.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.1",
+    "unplugin-auto-import": "^21.1.0",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
+    "@ant-design/icons": "~6.3.4",
     "@babel/core": "^7.29.7",
     "@rolldown/plugin-babel": "^0.2.3",
     "@tauri-apps/cli": "^2.11.4",
@@ -23,8 +28,10 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.1.0",
+    "antd": "^6.6.3",
     "babel-plugin-react-compiler": "^1.0.0",
     "oxlint": "^1.79.0",
+    "sass": "^1.104.0",
     "typescript": "~6.0.2",
     "vite": "^8.2.2"
   }

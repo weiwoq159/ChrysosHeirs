@@ -1,0 +1,10 @@
+{
+  "key": "batch-rename",
+  "name": "批量重命名",
+  "category": "file",
+  "description": "按照统一规则快速整理文件名称。",
+  "entry": "tools/batch-rename",
+  "link": "/tribios/library/batch-rename",
+  "status": "available",
+  "queueable": true
+}

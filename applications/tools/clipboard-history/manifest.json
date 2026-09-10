@@ -1,0 +1,10 @@
+{
+  "key": "clipboard-history",
+  "name": "剪贴板历史",
+  "category": "utility",
+  "description": "查看和恢复最近使用的剪贴内容。",
+  "entry": "tools/clipboard-history",
+  "link": "/tribios/library/clipboard-history",
+  "status": "available",
+  "queueable": false
+}

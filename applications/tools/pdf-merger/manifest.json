@@ -1,0 +1,10 @@
+{
+  "key": "pdf-merger",
+  "name": "PDF 合并器",
+  "category": "document",
+  "description": "按照指定顺序将多个 PDF 合并为单个文件。",
+  "entry": "tools/pdf-merger",
+  "link": "/tribios/library/pdf-merger",
+  "status": "available",
+  "queueable": true
+}

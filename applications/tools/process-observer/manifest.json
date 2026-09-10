@@ -1,0 +1,10 @@
+{
+  "key": "process-observer",
+  "name": "进程观察器",
+  "category": "system",
+  "description": "查看本机进程状态与资源占用情况。",
+  "entry": "tools/process-observer",
+  "link": "/tribios/library/process-observer",
+  "status": "available",
+  "queueable": false
+}

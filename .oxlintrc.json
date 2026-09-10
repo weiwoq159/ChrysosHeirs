@@ -11,16 +11,10 @@
     "react/exhaustive-deps": "warn",
     "react/only-export-components": ["warn", { "allowConstantExport": true }],
     "react/self-closing-comp": ["error", { "component": true, "html": true }],
-    "typescript/consistent-type-imports": [
-      "warn",
-      { "prefer": "type-imports", "fixStyle": "inline-type-imports" }
-    ],
+    "typescript/consistent-type-imports": ["warn", { "prefer": "type-imports", "fixStyle": "inline-type-imports" }],
     "import/first": ["warn", "absolute-first"],
     "import/no-duplicates": ["warn", { "preferInline": true }],
-    "eslint/no-unused-vars": [
-      "warn",
-      { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
-    ],
+    "eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
     "eslint/no-debugger": "error",
     "eslint/no-console": "warn"
   },

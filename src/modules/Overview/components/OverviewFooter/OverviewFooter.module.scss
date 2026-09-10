@@ -1,0 +1,26 @@
+.footerText {
+    position: relative;
+    margin: 0;
+    color: #526b82;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 50%;
+        width: 24px;
+        height: 1px;
+        background-color: rgba(37, 99, 145, 0.28);
+        content: "";
+    }
+
+    &::before {
+        right: calc(100% + 12px);
+    }
+
+    &::after {
+        left: calc(100% + 12px);
+    }
+}

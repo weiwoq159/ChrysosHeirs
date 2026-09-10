@@ -1,0 +1,10 @@
+{
+  "key": "file-organizer",
+  "name": "文件整理",
+  "category": "file",
+  "description": "按目录规则归类并移动本地文件。",
+  "entry": "tools/file-organizer",
+  "link": "/tribios/library/file-organizer",
+  "status": "available",
+  "queueable": true
+}

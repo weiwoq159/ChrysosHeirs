@@ -12,11 +12,13 @@
   "app": {
     "windows": [
       {
-        "title": "翁法罗斯黄金裔",
-        "width": 800,
-        "height": 600,
+        "title": "翁法罗斯·黄金裔",
+        "width": 1920,
+        "height": 1080,
         "resizable": true,
-        "fullscreen": false
+        "fullscreen": false,
+        "alwaysOnBottom": true,
+        "focus": false
       }
     ],
     "security": {

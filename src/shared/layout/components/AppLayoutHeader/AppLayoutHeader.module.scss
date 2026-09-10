@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding: 0 28px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.7), rgba(218, 239, 255, 0.44));
+  box-shadow: 0 10px 26px rgba(32, 77, 112, 0.1);
+  backdrop-filter: blur(20px) saturate(150%);
+}
+
+.brand {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #173b59;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.brandLogo {
+  display: block;
+  width: 44px;
+  height: 44px;
+  filter: drop-shadow(0 4px 6px rgba(34, 82, 117, 0.18));
+}
+
+.brandName,
+.brandSection {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.brandSection {
+  color: #4c718c;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.brandDivider {
+  height: 20px;
+  margin: 0;
+  border-color: rgba(74, 119, 151, 0.5);
+}
+
+.headerArtwork {
+  position: absolute;
+  top: -56px;
+  right: 0;
+  width: min(38vw, 510px);
+  height: 180px;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0.24;
+  mix-blend-mode: multiply;
+  mask-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 720px) {
+  .header {
+    padding: 0 18px;
+  }
+
+  .brandDivider,
+  .brandSection,
+  .headerArtwork {
+    display: none;
+  }
+}

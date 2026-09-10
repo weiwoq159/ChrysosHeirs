@@ -1,0 +1,10 @@
+{
+  "key": "document-diff",
+  "name": "文档差异比对",
+  "category": "document",
+  "description": "对照两份文档并标记文字内容差异。",
+  "entry": "tools/document-diff",
+  "link": "/tribios/library/document-diff",
+  "status": "disabled",
+  "queueable": false
+}

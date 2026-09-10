@@ -1,0 +1,10 @@
+{
+  "key": "startup-manager",
+  "name": "启动项管理",
+  "category": "system",
+  "description": "查看并管理系统登录时自动运行的项目。",
+  "entry": "tools/startup-manager",
+  "link": "/tribios/library/startup-manager",
+  "status": "unavailable",
+  "queueable": false
+}

@@ -1,0 +1,10 @@
+{
+  "key": "document-converter",
+  "name": "文档转换",
+  "category": "document",
+  "description": "在常用办公文档格式之间快速转换。",
+  "entry": "tools/document-converter",
+  "link": "/tribios/library/document-converter",
+  "status": "available",
+  "queueable": true
+}

@@ -1,0 +1,10 @@
+{
+  "key": "application-manager",
+  "name": "应用管理器",
+  "category": "system",
+  "description": "维护已收录应用及其启动配置。",
+  "entry": "tools/application-manager",
+  "link": "/tribios/library/application-manager",
+  "status": "available",
+  "queueable": false
+}

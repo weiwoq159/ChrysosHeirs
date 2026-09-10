@@ -1,0 +1,10 @@
+{
+  "key": "image-processor",
+  "name": "图片处理",
+  "category": "media",
+  "description": "批量调整图片尺寸、格式与质量。",
+  "entry": "tools/image-processor",
+  "link": "/tribios/library/image-processor",
+  "status": "available",
+  "queueable": true
+}

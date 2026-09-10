@@ -1,0 +1,10 @@
+{
+  "key": "timestamp-converter",
+  "name": "时间戳转换",
+  "category": "utility",
+  "description": "在 Unix 时间戳与本地日期时间之间转换。",
+  "entry": "tools/timestamp-converter",
+  "link": "/tribios/library/timestamp-converter",
+  "status": "disabled",
+  "queueable": false
+}
