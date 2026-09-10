@@ -1,0 +1,10 @@
+{
+  "key": "text-deduplicator",
+  "name": "文本去重",
+  "category": "utility",
+  "description": "按行识别并移除重复文本，保留首次出现的内容。",
+  "entry": "tools/text-deduplicator",
+  "link": "/tribios/library/text-deduplicator",
+  "status": "available",
+  "queueable": false
+}
