@@ -3,6 +3,8 @@
   "name": "时间戳转换",
   "category": "utility",
   "description": "在 Unix 时间戳与本地日期时间之间转换。",
+  "eyebrow": "TIMESTAMP CONVERTER",
+  "tags": ["时间戳", "时区转换", "日期时间"],
   "entry": "tools/timestamp-converter",
   "link": "/tribios/library/timestamp-converter",
   "status": "disabled",

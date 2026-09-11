@@ -14,9 +14,10 @@ const { Sider } = Layout;
 export interface AppLayoutSiderProps {
   appName: AppName;
   extra?: ReactNode;
+  selectedMenuKey?: string;
 }
 
-export const AppLayoutSider = ({ appName, extra }: AppLayoutSiderProps) => {
+export const AppLayoutSider = ({ appName, extra, selectedMenuKey }: AppLayoutSiderProps) => {
   const { pathname } = useLocation();
   const app = appModulesMap.get(appName);
 
@@ -44,7 +45,12 @@ export const AppLayoutSider = ({ appName, extra }: AppLayoutSiderProps) => {
         <span className={styles.kicker}>{app.name.toUpperCase()}</span>
         <span className={styles.title}>功能导航</span>
       </Space>
-      <Menu className={styles.menu} mode="inline" selectedKeys={[pathname]} items={navigationItems} />
+      <Menu
+        className={styles.menu}
+        mode="inline"
+        selectedKeys={[selectedMenuKey ?? pathname]}
+        items={navigationItems}
+      />
       <div className={styles.footer}>
         {extra}
         <p className={styles.quote}>{app.descriptionHero}</p>

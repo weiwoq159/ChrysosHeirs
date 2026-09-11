@@ -10,6 +10,7 @@
   "arrowParens": "always",
   "endOfLine": "lf",
   "sortImports": {
+    "internalPattern": ["@/", "@tribios/", "#"],
     "newlinesBetween": true,
     "customGroups": [
       {
@@ -30,12 +31,10 @@
       }
     ],
     "groups": [
-      "type-import",
       "react",
       "antd",
-      ["value-builtin", "value-external"],
-      "internal",
-      ["value-parent", "value-sibling", "value-index"],
+      ["type-builtin", "type-external", "type-internal", "value-builtin", "value-external", "internal"],
+      ["type-parent", "type-sibling", "type-index", "value-parent", "value-sibling", "value-index"],
       ["side_effect_style", "style"],
       "unknown"
     ]

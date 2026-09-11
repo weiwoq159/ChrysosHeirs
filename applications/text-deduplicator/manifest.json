@@ -3,6 +3,8 @@
   "name": "文本去重",
   "category": "utility",
   "description": "按行识别并移除重复文本，保留首次出现的内容。",
+  "eyebrow": "TEXT DEDUPLICATOR",
+  "tags": ["按行去重", "文本处理", "去重"],
   "entry": "tools/text-deduplicator",
   "link": "/tribios/library/text-deduplicator",
   "status": "available",

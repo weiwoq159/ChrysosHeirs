@@ -3,6 +3,8 @@
   "name": "剪贴板历史",
   "category": "utility",
   "description": "查看和恢复最近使用的剪贴内容。",
+  "eyebrow": "CLIPBOARD HISTORY",
+  "tags": ["剪贴板", "历史记录", "快速恢复"],
   "entry": "tools/clipboard-history",
   "link": "/tribios/library/clipboard-history",
   "status": "available",

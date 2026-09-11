@@ -1,0 +1,59 @@
+@use "../../../../../../../styles/variables.scss" as glass;
+
+.card {
+  height: 100%;
+
+  @include glass.glass-card($radius: 16px);
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+  color: #234963;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.description {
+  margin: 6px 0 18px;
+  color: #758c9d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.descriptions {
+  :global(.ant-descriptions-item-label) {
+    color: #7d95a5;
+    font-size: 11px;
+  }
+
+  :global(.ant-descriptions-item-content) {
+    overflow: hidden;
+    color: #375b73;
+    font-size: 12px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.manifest {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(121, 158, 185, 0.16);
+}
+
+.code {
+  margin: 12px 0 0;
+  padding: 12px;
+  overflow: auto;
+  border-radius: 11px;
+  color: #5b7284;
+  background: rgba(30, 66, 91, 0.06);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.75;
+}

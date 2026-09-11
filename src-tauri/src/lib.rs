@@ -1,24 +1,27 @@
-mod domain;
 mod applications;
 mod commands;
-
-
+mod domain;
+mod rename;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-  tauri::Builder::default()
-    .setup(|app| {
-      if cfg!(debug_assertions) {
-        app.handle().plugin(
-          tauri_plugin_log::Builder::default()
-            .level(log::LevelFilter::Info)
-            .build(),
-        )?;
-      }
-      Ok(())
-    }).invoke_handler(tauri::generate_handler![
-      commands::applications::list_applications,
-    ])
-    .run(tauri::generate_context!())
-    .expect("error while running tauri application");
+    tauri::Builder::default()
+        .plugin(tauri_plugin_dialog::init())
+        .setup(|app| {
+            if cfg!(debug_assertions) {
+                app.handle().plugin(
+                    tauri_plugin_log::Builder::default()
+                        .level(log::LevelFilter::Info)
+                        .build(),
+                )?;
+            }
+            Ok(())
+        })
+        .invoke_handler(tauri::generate_handler![
+            commands::applications::list_applications,
+            commands::rename::list_batch_rename_files,
+            commands::rename::preview_batch_rename,
+        ])
+        .run(tauri::generate_context!())
+        .expect("error while running tauri application");
 }

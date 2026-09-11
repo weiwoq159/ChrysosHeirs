@@ -1,0 +1,16 @@
+.toolbar {
+  margin-bottom: 16px;
+}
+
+.search {
+  min-width: 220px;
+  flex: 1 1 280px;
+  border-color: rgba(255, 255, 255, 0.62);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.status {
+  width: 132px;
+}

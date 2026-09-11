@@ -1,0 +1,106 @@
+@use "../../../../../../styles/variables.scss" as glass;
+
+.ruleCard,
+.previewCard {
+  height: 100%;
+
+  @include glass.glass-card($radius: 16px);
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+  color: #234963;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.description,
+.previewDescription {
+  margin: 6px 0 18px;
+  color: #758c9d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.previewDescription {
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 15px 0;
+  border-top: 1px solid rgba(121, 158, 185, 0.14);
+
+  &:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  color: #46667c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.previewTable {
+  :global(.ant-table) {
+    background: transparent;
+  }
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.actions {
+  margin-top: 4px;
+
+  :global(.ant-btn) {
+    flex: 1;
+  }
+}
+
+.previewHeader {
+  margin-bottom: 16px;
+}
+
+.stats {
+  margin-bottom: 16px;
+}
+
+.stat {
+  padding: 11px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.3);
+
+  span {
+    display: block;
+    color: #7d95a5;
+    font-size: 11px;
+  }
+
+  strong {
+    display: block;
+    margin-top: 4px;
+    color: #375b73;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.previewTable {
+  :global(.ant-tag) {
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

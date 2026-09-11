@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 
-import { Layout } from "antd";
+import { Breadcrumb, Layout, type BreadcrumbProps } from "antd";
 
 import { appModulesMap, type AppName } from "@/modules/apps/registry";
 import { useBreadcrumb } from "@/shared/hooks/useBreadcrum";
@@ -12,8 +12,10 @@ import styles from "./AppLayout.module.scss";
 const { Content } = Layout;
 interface AppLayoutProps {
   appName: AppName;
+  breadcrumbItems?: BreadcrumbProps["items"];
+  selectedMenuKey?: string;
 }
-export const AppLayout = ({ appName }: AppLayoutProps) => {
+export const AppLayout = ({ appName, breadcrumbItems, selectedMenuKey }: AppLayoutProps) => {
   const app = appModulesMap.get(appName);
 
   if (!app) {
@@ -21,13 +23,18 @@ export const AppLayout = ({ appName }: AppLayoutProps) => {
   }
 
   const { title, cover } = app;
-  const breadcrumb = useBreadcrumb({ className: styles.breadcrumb });
+  const defaultBreadcrumb = useBreadcrumb({ className: styles.breadcrumb });
+  const breadcrumb = breadcrumbItems ? (
+    <Breadcrumb className={styles.breadcrumb} items={breadcrumbItems} />
+  ) : (
+    defaultBreadcrumb
+  );
 
   return (
     <Layout className={styles.layout}>
       <AppLayoutHeader title={title} cover={cover} />
       <Layout>
-        <AppLayoutSider appName={appName} />
+        <AppLayoutSider appName={appName} selectedMenuKey={selectedMenuKey} />
         <Layout className={styles.contentLayout}>
           {breadcrumb}
           <Content className={styles.content}>

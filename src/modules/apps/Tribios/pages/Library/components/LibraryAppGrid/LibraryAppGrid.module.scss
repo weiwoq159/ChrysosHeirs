@@ -1,0 +1,134 @@
+@use "../../../../../../../styles/variables.scss" as glass;
+
+.column {
+  display: flex;
+}
+
+.cardButton {
+  @include glass.card-button;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @include glass.glass-card(
+    $border-color: rgba(255, 255, 255, 0.56),
+    $background: rgba(255, 255, 255, 0.27),
+    $shadow: 0 7px 18px rgba(32, 77, 112, 0.04),
+    $backdrop-filter: blur(9px) saturate(120%)
+  );
+
+  transition:
+    transform 170ms ease,
+    background-color 170ms ease,
+    box-shadow 170ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.44);
+    box-shadow: 0 12px 24px rgba(32, 77, 112, 0.1);
+  }
+}
+
+.cardBody {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  padding: 17px;
+}
+
+.identity {
+  min-width: 0;
+}
+
+.icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 11px;
+  color: #3f7196;
+  background: rgba(255, 255, 255, 0.56);
+  font-size: 18px;
+}
+
+.name {
+  display: block;
+  overflow: hidden;
+  color: #234963;
+  font-size: 14px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+  color: #397d70;
+  font-size: 11px;
+
+  &::before {
+    width: 6px;
+    height: 6px;
+    border-radius: 99px;
+    background: currentcolor;
+    content: "";
+  }
+
+  &[data-status="disabled"] {
+    color: #a27464;
+  }
+
+  &[data-status="unavailable"] {
+    color: #9a6670;
+  }
+}
+
+.description {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 16px 0 14px;
+  color: #71889a;
+  font-size: 12px;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.tags {
+  margin-top: auto;
+
+  :global(.ant-tag) {
+    margin: 0;
+    border-radius: 999px;
+    color: #5b7c92;
+    background: rgba(229, 242, 251, 0.7);
+    font-size: 11px;
+  }
+}
+
+.key {
+  display: block;
+  margin-top: 12px;
+  overflow: hidden;
+  color: #8ba0ae;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.empty {
+  display: grid;
+  min-height: 230px;
+  place-items: center;
+  border: 1px dashed rgba(116, 153, 181, 0.38);
+  border-radius: 14px;
+  color: #7890a0;
+}

@@ -3,6 +3,8 @@
   "name": "文档转换",
   "category": "document",
   "description": "在常用办公文档格式之间快速转换。",
+  "eyebrow": "DOCUMENT CONVERTER",
+  "tags": ["格式转换", "办公文档", "批量处理"],
   "entry": "tools/document-converter",
   "link": "/tribios/library/document-converter",
   "status": "available",

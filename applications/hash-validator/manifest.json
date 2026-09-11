@@ -3,6 +3,8 @@
   "name": "哈希校验器",
   "category": "utility",
   "description": "计算并核对文件的常用哈希摘要。",
+  "eyebrow": "HASH VALIDATOR",
+  "tags": ["哈希校验", "完整性", "文件核对"],
   "entry": "tools/hash-validator",
   "link": "/tribios/library/hash-validator",
   "status": "available",

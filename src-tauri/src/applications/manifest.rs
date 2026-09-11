@@ -26,6 +26,8 @@ pub struct ApplicationManifest {
     pub name: String,
     pub category: ApplicationCategory,
     pub description: String,
+    pub eyebrow: String,
+    pub tags: Vec<String>,
     pub entry: String,
     pub link: String,
     pub status: ApplicationStatus,

@@ -3,6 +3,8 @@
   "name": "进程观察器",
   "category": "system",
   "description": "查看本机进程状态与资源占用情况。",
+  "eyebrow": "PROCESS OBSERVER",
+  "tags": ["进程监控", "资源占用", "系统"],
   "entry": "tools/process-observer",
   "link": "/tribios/library/process-observer",
   "status": "available",

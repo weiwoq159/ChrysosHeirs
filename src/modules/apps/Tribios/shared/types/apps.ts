@@ -7,6 +7,8 @@ export interface ApplicationManifest {
   name: string;
   category: ApplicationCategory;
   description: string;
+  eyebrow: string;
+  tags: string[];
   entry: string;
   link: `/tribios/library/${string}`;
   status: ApplicationStatus;

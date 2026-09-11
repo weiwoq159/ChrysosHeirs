@@ -3,6 +3,8 @@
   "name": "媒体信息查看",
   "category": "media",
   "description": "读取音视频编码、时长与轨道信息。",
+  "eyebrow": "MEDIA INSPECTOR",
+  "tags": ["编码信息", "音视频", "元数据"],
   "entry": "tools/media-inspector",
   "link": "/tribios/library/media-inspector",
   "status": "disabled",

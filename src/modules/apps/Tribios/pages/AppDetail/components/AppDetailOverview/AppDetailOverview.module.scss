@@ -1,0 +1,75 @@
+@use "../../../../../../../styles/variables.scss" as glass;
+
+.card {
+  height: 100%;
+
+  @include glass.glass-card($radius: 16px);
+}
+
+.cardBody {
+  padding: 22px;
+}
+
+.title {
+  margin: 0;
+  color: #234963;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.description {
+  margin: 6px 0 18px;
+  color: #758c9d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.item {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.itemIcon {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 9px;
+  color: #4d789d;
+  background: rgba(221, 240, 252, 0.7);
+  font-size: 14px;
+}
+
+.itemTitle,
+.itemText {
+  display: block;
+}
+
+.itemTitle {
+  color: #375b73;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.itemText {
+  margin-top: 3px;
+  color: #778e9e;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.usage {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(121, 158, 185, 0.16);
+
+  :global(.ant-tag) {
+    margin: 0;
+    border-radius: 999px;
+    color: #5b7c92;
+    background: rgba(229, 242, 251, 0.7);
+  }
+}

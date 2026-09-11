@@ -1,13 +1,15 @@
 import type { ApplicationCategory, ApplicationManifest } from "@tribios/shared/types/apps";
 
-import { Flex, Row, Col } from "antd";
+import { useEffect, useMemo, useState } from "react";
+
+import { App, Col, Flex, Row } from "antd";
 
 import { useApplicationStore } from "@tribios/shared/stores/apps";
 
 import { Hero } from "@/shared/components";
 
-import { LibraryOverview, LibraryFilter } from "./components";
-import { type LibraryCategory } from "./constants";
+import { LibraryCatalog, LibraryFilter, LibraryOverview } from "./components";
+import type { LibraryCategory, LibraryStatus } from "./constants";
 
 const featureTags = ["应用索引", "分类筛选", "状态追踪"];
 
@@ -43,10 +45,52 @@ const getLibrarySummary = (apps: ApplicationManifest[]): LibrarySummary => {
   };
 };
 export const Library = () => {
+  const { message } = App.useApp();
   const apps = useApplicationStore((state) => state.apps);
+  const error = useApplicationStore((state) => state.error);
+  const loadApps = useApplicationStore((state) => state.loadApps);
   const [activeCategory, setActiveCategory] = useState<LibraryCategory>("all");
+  const [activeStatus, setActiveStatus] = useState<LibraryStatus>("all");
+  const [keyword, setKeyword] = useState("");
 
-  const summary = getLibrarySummary(apps);
+  useEffect(() => {
+    void loadApps();
+  }, [loadApps]);
+
+  const summary = useMemo(() => getLibrarySummary(apps), [apps]);
+  const filteredApps = useMemo(() => {
+    const normalizedKeyword = keyword.trim().toLocaleLowerCase();
+
+    return apps.filter((application) => {
+      const matchesCategory = activeCategory === "all" || application.category === activeCategory;
+      const matchesStatus = activeStatus === "all" || application.status === activeStatus;
+      const matchesKeyword =
+        normalizedKeyword.length === 0 ||
+        `${application.name} ${application.description} ${application.key}`.toLocaleLowerCase().includes(normalizedKeyword);
+
+      return matchesCategory && matchesStatus && matchesKeyword;
+    });
+  }, [activeCategory, activeStatus, apps, keyword]);
+  const hasActiveFilters = activeCategory !== "all" || activeStatus !== "all" || keyword.length > 0;
+
+  const handleReset = () => {
+    setActiveCategory("all");
+    setActiveStatus("all");
+    setKeyword("");
+  };
+
+  const handleRefresh = async () => {
+    await loadApps();
+
+    const refreshError = useApplicationStore.getState().error;
+    if (refreshError) {
+      message.error(refreshError);
+      return;
+    }
+
+    message.success("应用清单已刷新");
+  };
+
   return (
     <Flex vertical gap={28}>
       <Hero
@@ -66,7 +110,18 @@ export const Library = () => {
           />
         </Col>
         <Col xs={24} lg={18}>
-          2
+          <LibraryCatalog
+            apps={filteredApps}
+            error={error}
+            hasActiveFilters={hasActiveFilters}
+            keyword={keyword}
+            resultCount={filteredApps.length}
+            status={activeStatus}
+            onKeywordChange={setKeyword}
+            onRefresh={handleRefresh}
+            onReset={handleReset}
+            onStatusChange={setActiveStatus}
+          />
         </Col>
       </Row>
     </Flex>

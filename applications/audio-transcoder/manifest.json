@@ -3,6 +3,8 @@
   "name": "音频转码",
   "category": "media",
   "description": "批量转换音频格式、码率与采样率。",
+  "eyebrow": "AUDIO TRANSCODER",
+  "tags": ["格式转换", "批量处理", "音频"],
   "entry": "tools/audio-transcoder",
   "link": "/tribios/library/audio-transcoder",
   "status": "available",

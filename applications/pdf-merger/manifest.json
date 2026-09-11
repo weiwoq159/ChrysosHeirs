@@ -3,6 +3,8 @@
   "name": "PDF 合并器",
   "category": "document",
   "description": "按照指定顺序将多个 PDF 合并为单个文件。",
+  "eyebrow": "PDF MERGER",
+  "tags": ["PDF 合并", "页序调整", "文档"],
   "entry": "tools/pdf-merger",
   "link": "/tribios/library/pdf-merger",
   "status": "available",

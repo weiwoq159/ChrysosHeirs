@@ -1,0 +1,55 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.backButton {
+  height: auto;
+  margin-bottom: 16px;
+  padding: 0;
+  color: #58788f;
+  font-size: 13px;
+
+  &:hover {
+    color: #285e87 !important;
+  }
+}
+
+.content,
+.identity {
+  min-width: 0;
+}
+
+.icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 18px;
+  color: #39739b;
+  background: rgba(255, 255, 255, 0.52);
+  font-size: 28px;
+}
+
+.title {
+  margin: 0;
+  color: #1b405e;
+  font-size: clamp(25px, 3.4vw, 34px);
+  font-weight: 650;
+}
+
+.description {
+  margin: 8px 0 0;
+  color: #6f8799;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.status {
+  margin: 0;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+}
